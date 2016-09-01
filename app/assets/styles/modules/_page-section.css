@@ -1,0 +1,9 @@
+.page-section {
+  padding: 40px 0;
+
+  &--blue {
+    background-color: $mainBlue;
+    color: white;
+  }
+
+}
