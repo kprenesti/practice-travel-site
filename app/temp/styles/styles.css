@@ -719,6 +719,7 @@ a {
 .feature-item {
   padding-left: 94px;
   position: relative;
+  margin-bottom: 2.5rem;
 }
 
 .feature-item__icon {
