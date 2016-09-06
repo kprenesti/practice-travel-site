@@ -10,6 +10,24 @@
     max-width: 976px;
   }
 
+  &--no-pad-until-med{
+    padding-left: 0;
+    padding-right: 0;
+    @mixin atMedium {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  &--no-pad-until-sm{
+    padding-left: 0;
+    padding-right: 0;
+    @mixin atSmall {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
   .wrapper {
     padding-left: 0;
     padding-right: 0;
