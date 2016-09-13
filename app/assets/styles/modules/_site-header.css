@@ -66,6 +66,7 @@
       transform-origin: 0 0;
       transition: transform .3s ease-out;
     }
+
     &--middle {
       content: "";
       display: block;
@@ -79,6 +80,7 @@
       transform-origin: 0 50%;
 
     }
+    
     &::after {
       content: "";
       display: block;
