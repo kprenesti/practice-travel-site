@@ -1,20 +1,38 @@
 .primary-nav {
+  padding-top: 10px;
 
+  @mixin atMedium {
+    padding-top: 0;
+  }
 
   &--pull-right {
-    float: right;
+    @mixin atMedium {
+      float: right;
+    }
   }
 
   ul {
     margin: 0;
     padding: 0;
-    @mixin clearfix;
+    @mixin clearFix;
   }
 
   li {
+    display: inline-block;
     list-style: none;
-    float: left;
-    padding-right: 20px;
+    padding-right: 7px;
+    @mixin atMedium {
+      float: left;
+      display: block;
+      padding-right: 20px;
+    }
+  }
+
+  li:last-child{
+    padding-right: 0;
+    @mixin atMedium {
+      padding-right: 20px;
+    }
   }
 
   a {
@@ -22,6 +40,15 @@
     font-weight: 300;
     text-decoration: none;
     display: block;
-    padding: 12px 0;
+    padding: 8px 10px;
+    /*font-size: .8rem;*/
+    background-color: rgba($mainBlue, .9);
+
+    @mixin atMedium {
+      background-color: transparent;
+      font-size: 1rem;
+      padding: 12px 0;
+
+    }
   }
 }
