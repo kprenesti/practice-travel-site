@@ -1164,7 +1164,12 @@ a {
 @media (min-width: 880px) {
 
   .site-header {
+    position: fixed;
     background-color: rgba(47,85,114, .3);
+  }
+
+  .site-header--dark {
+    background-color: rgba(23, 51, 72, .85 );
   }
 }
 
@@ -1189,6 +1194,10 @@ a {
   transform-origin: 50% 0;
   background-color: #2f5572;
   padding: 25px 36px;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 }
 
 @media (min-width: 880px) {
@@ -1197,6 +1206,11 @@ a {
     left: auto;
     -webkit-transform: translateX(0) scale(1);
     transform: translateX(0) scale(1);
+  }
+
+  .site-header--dark .site-header__logo {
+    -webkit-transform: scale(.57);
+    transform: scale(.57);
   }
 }
 
