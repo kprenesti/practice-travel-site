@@ -9,12 +9,18 @@
     margin-bottom: 5rem;
   }
 
-  strong {
-    font-weight: 500;
+
+/*======= MODIFIERS ==========*/
+  &--b-margin-small {
+    margin-bottom: 1.3rem;
   }
 
   &--blue {
     color: $mainBlue;
+  }
+
+  strong {
+    font-weight: 500;
   }
 
   &__icon {
