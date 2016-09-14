@@ -1,4 +1,6 @@
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 10;
   background-color: rgba(255, 255, 255, .94);
@@ -9,5 +11,28 @@
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.65;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    color: $mainBlue;
+    font-weight: 300;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    cursor: pointer;
+
+    &:hover {
+      color: $mainOrange;
+    }
+  }
+
+  &__inner-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
