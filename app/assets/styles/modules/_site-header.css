@@ -141,7 +141,7 @@
       z-index: 1;
       padding-top: 0;
       @mixin clearFix;
-    }
+      }
 
     &--is-visible {
       opacity: 1;
