@@ -1323,3 +1323,13 @@ a {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+.revealedItem {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s ease-out;
+  transition: opacity 1.5s ease-out;
+}
+
+.revealedItem--isRevealed {
+  opacity: 1;
+}
